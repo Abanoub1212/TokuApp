@@ -63,6 +63,7 @@ class PhraseItems extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.only(bottom: 10),
       height: 100,
       color: color,
       child: Row(

@@ -10,21 +10,21 @@ class Catogery extends StatelessWidget {
       onTap: OnTap,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(10),
           color: color,
         ),
         margin: const EdgeInsets.only(bottom: 10),
-        padding: const EdgeInsets.only(left: 24),
         alignment: Alignment.center,
-        height: 65,
-        width: double.infinity,
-        child: Padding(
-          padding: const EdgeInsets.only(right: 30),
-          child: Text(text!,
-            style: const TextStyle(
-              fontSize: 18,
-              color: Colors.white,
-            ),),
+        width: 300,
+        child: FittedBox(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 15),
+            child: Text(text!,
+              style: const TextStyle(
+                fontSize: 18,
+                color: Colors.white,
+              ),),
+          ),
         ),
       ),
     );

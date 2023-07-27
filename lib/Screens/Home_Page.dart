@@ -12,46 +12,48 @@ class HomePage extends StatelessWidget {
       backgroundColor: const Color(0xFFFDF4DA),
       appBar: AppBar(
           title: const Text("Toku"), backgroundColor: const Color(0xFF45312B)),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Catogery(
-            OnTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return NumbersPage();
-              }));
-            },
-            text: "Numbers",
-            color: const Color(0xFFE99135),
-          ),
-          Catogery(
-            OnTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return FamilyMembersPage();
-              }));
-            },
-            text: "Family Members",
-            color: const Color(0XFF588834),
-          ),
-          Catogery(
-            OnTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return ColorPage();
-              }));
-            },
-            text: "Colors",
-            color: const Color(0XFF75369F),
-          ),
-          Catogery(
-            OnTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) {
-                return PhrasesPage();
-              }));
-            },
-            text: "Phrases",
-            color: const Color(0XFF55ABC9),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Catogery(
+              OnTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return NumbersPage();
+                }));
+              },
+              text: "Numbers",
+              color: const Color(0xFFE99135),
+            ),
+            Catogery(
+              OnTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FamilyMembersPage();
+                }));
+              },
+              text: "Family Members",
+              color: const Color(0XFF588834),
+            ),
+            Catogery(
+              OnTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ColorPage();
+                }));
+              },
+              text: "Colors",
+              color: const Color(0XFF75369F),
+            ),
+            Catogery(
+              OnTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return PhrasesPage();
+                }));
+              },
+              text: "Phrases",
+              color: const Color(0XFF55ABC9),
+            ),
+          ],
+        ),
       ),
     );
   }
